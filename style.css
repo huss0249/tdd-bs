@@ -1,4 +1,4 @@
 body,
 body * {
-    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, sans-serif !important;
 }
