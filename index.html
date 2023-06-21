@@ -19,60 +19,309 @@
 
 </head>
 <body>
-<!-- --------------------------------------------------------------------------------------------------------- -->
-<main id='main' class="container flex-column d-flex align-items-center align-self-center p-5">
-	<div class='container d-flex justify-content-around py-5 mx-3 col-6 gap-4'>
+<!-- ------------------------------------------------------------------------------------------ -->
 
-		<button 
-				  id='en' 
-				  class='btn btn-outline-secondary shadow' 
-				  href='#' 
-				  data-bs-toggle="modal" 
-				  data-bs-target="#modal"
-				  data-bs-full="msg1"
-				  data-bs-obj="1"
-				  data-bs-style="2"
-				  data-bs-html="true"
-                  >ENGLISH</button>
-                  
-                  <button 
-				  id='fr' 
-				  class='btn btn-outline-secondary shadow' 
-				  href='#' 
-				  data-bs-toggle="modal" 
-				  data-bs-target="#modal" 
-				  data-bs-full="msg2"
-				  data-bs-obj="2"
-				  data-bs-style="2"
-				  data-bs-html="true"
-                  >FRENCH</button>
-                  
-                  <button 
-				  id='info' 
-				  class='btn btn-outline-secondary shadow' 
-				  href='#' 
-				  data-bs-toggle="modal" 
-				  data-bs-target="#modal" 
-				  data-bs-full="msg1"
-				  data-bs-obj="1"
-				  data-bs-style="1"
-				  data-bs-html="true"
-                  >INFO</button>
-                  
-                  <button 
-				  id='close' 
-				  class='btn btn-outline-secondary shadow' 
-				  href='#' 
-				  data-bs-toggle="modal" 
-				  data-bs-target="#modal" 
-				  data-bs-full="msg2"
-				  data-bs-obj="2"
-				  data-bs-style="0"
-				  data-bs-html="false"
-		  >CLOSE</button>
+<header class="bg-secondary">
+	<nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
+	  <div class="container-fluid">
+		<a class="navbar-brand" href="#">Dark offcanvas navbar</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+		  <div class="offcanvas-header">
+			<h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Offcanvas</h5>
+			<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		  </div>
+		  <div class="offcanvas-body">
+			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Dropdown
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Action</a></li>
+				  <li><a class="dropdown-item" href="#">Another action</a></li>
+				  <li>
+					<hr class="dropdown-divider">
+				  </li>
+				  <li><a class="dropdown-item" href="#">Something else here</a></li>
+				</ul>
+			  </li>
+			</ul>
+			<form class="d-flex mt-3" role="search">
+			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" spellcheck="false" data-ms-editor="true">
+			  <button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	</nav>
+  </header>
 
+  <main class="container-fluid bg-secondary">
+
+
+
+
+	<div class="container-fluid col-xxl-8 px-4 py-5 bg-light">
+	<div class="container col-xxl-8 px-4 py-5">
+		<div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+		  <div class="col-10 col-sm-8 col-lg-6">
+			<img src="https://fastly.picsum.photos/id/819/200/200.jpg?hmac=nCwO4yKGbs8354aS0yf974UlPFBF_gwUSNazar7yBhk" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+		  </div>
+		  <div class="col-lg-6">
+			<h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+			<p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+			<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+			  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+			  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  </div>
+
+
+
+
+
+
+
+	  <div class="container my-5">
+		<div class="p-5 text-center bg-body-tertiary rounded-3">
+		  <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"></use></svg>
+		  <h1 class="text-body-emphasis">Jumbotron with icon</h1>
+		  <p class="col-lg-8 mx-auto fs-5 text-muted">
+			This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive <code>.col-*</code> class, and a customized call to action.
+		  </p>
+		  <div class="d-inline-flex gap-2 mb-5">
+			<button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+			  Call to action
+			  <svg class="bi ms-2" width="24" height="24"><use xlink:href="#arrow-right-short"></use></svg>
+			</button>
+			<button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+			  Secondary link
+			</button>
+		  </div>
+		</div>
+	  </div>
+
+
+
+
+
+
+
+	  <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+		<div class="col d-flex flex-column align-items-start gap-2">
+		  <h2 class="fw-bold text-body-emphasis">Left-aligned title explaining these awesome features</h2>
+		  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+		  <a href="#" class="btn btn-primary btn-lg">Primary button</a>
+		</div>
+  
+		<div class="col">
+		  <div class="row row-cols-1 row-cols-sm-2 g-4">
+			<div class="col d-flex flex-column gap-2">
+			  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+				<svg class="bi" width="1em" height="1em">
+				  <use xlink:href="#collection"></use>
+				</svg>
+			  </div>
+			  <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+			  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+			</div>
+  
+			<div class="col d-flex flex-column gap-2">
+			  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+				<svg class="bi" width="1em" height="1em">
+				  <use xlink:href="#gear-fill"></use>
+				</svg>
+			  </div>
+			  <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+			  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+			</div>
+  
+			<div class="col d-flex flex-column gap-2">
+			  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+				<svg class="bi" width="1em" height="1em">
+				  <use xlink:href="#speedometer"></use>
+				</svg>
+			  </div>
+			  <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+			  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+			</div>
+  
+			<div class="col d-flex flex-column gap-2">
+			  <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+				<svg class="bi" width="1em" height="1em">
+				  <use xlink:href="#table"></use>
+				</svg>
+			  </div>
+			  <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+			  <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+
+
+
+
+
+
+
+	  <div class="my-5">
+		<div class="p-5 text-center bg-body-tertiary">
+		  <div class="container py-5">
+			<h1 class="text-body-emphasis">Full-width jumbotron</h1>
+			<p class="col-lg-8 mx-auto lead">
+			  This takes the basic jumbotron above and makes its background edge-to-edge with a <code>.container</code> inside to align content. Similar to above, it's been recreated with built-in grid and utility classes.
+			</p>
+		  </div>
+		</div>
+	  </div>
+
+
+
+
+
+
+
+
+
+	<div class="container-fluid pt-5">
+	  <div class="bg-body-tertiary p-5 rounded">
+		<div class="col-sm-8 py-5 mx-auto">
+		  <h1 class="display-5 fw-normal">Navbar with offcanvas examples</h1>
+		  <p class="fs-5">This example shows how responsive offcanvas menus work within the navbar. For positioning of navbars, checkout the <a href="/docs/5.3/examples/navbar-static/">top</a> and <a href="/docs/5.3/examples/navbar-fixed/">fixed top</a> examples.</p>
+		  <p>From the top down, you'll see a dark navbar, light navbar and a responsive navbar—each with offcanvases built in. Resize your browser window to the large breakpoint to see the toggle for the offcanvas.</p>
+		  <p>
+			<a class="btn btn-primary" href="/docs/5.3/components/navbar/#offcanvas" role="button">Learn more about offcanvas navbars »</a>
+		  </p>
+	  </div>
+	  </div>
 	</div>
 
-</main>
+	<div class="container">
+		<div class="row g-5">
+			<div class="col-md-6">
+			<h2 class="text-body-emphasis">Starter projects</h2>
+			<p>Ready to beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
+			<ul class="list-unstyled ps-0">
+				<li>
+				<a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/icons-font" rel="noopener" target="_blank">
+					<svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"></use></svg>
+					Bootstrap npm starter
+				</a>
+				</li>
+				<li>
+				<a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/parcel" rel="noopener" target="_blank">
+					<svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"></use></svg>
+					Bootstrap Parcel starter
+				</a>
+				</li>
+				<li>
+				<a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/vite" rel="noopener" target="_blank">
+					<svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"></use></svg>
+					Bootstrap Vite starter
+				</a>
+				</li>
+				<li>
+				<a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/webpack" rel="noopener" target="_blank">
+					<svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"></use></svg>
+					Bootstrap Webpack starter
+				</a>
+				</li>
+			</ul>
+			</div>
+	
+			<div class="col-md-6">
+			<h2 class="text-body-emphasis">Guides</h2>
+			<p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+			<ul class="list-unstyled ps-0">
+				<li>
+				<a class="icon-link mb-1" href="/docs/5.3/getting-started/introduction/">
+					<svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"></use></svg>
+					Bootstrap quick start guide
+				</a>
+				</li>
+				<li>
+				<a class="icon-link mb-1" href="/docs/5.3/getting-started/webpack/">
+					<svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"></use></svg>
+					Bootstrap Webpack guide
+				</a>
+				</li>
+				<li>
+				<a class="icon-link mb-1" href="/docs/5.3/getting-started/parcel/">
+					<svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"></use></svg>
+					Bootstrap Parcel guide
+				</a>
+				</li>
+				<li>
+				<a class="icon-link mb-1" href="/docs/5.3/getting-started/vite/">
+					<svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"></use></svg>
+					Bootstrap Vite guide
+				</a>
+				</li>
+				<li>
+				<a class="icon-link mb-1" href="/docs/5.3/getting-started/contribute/">
+					<svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"></use></svg>
+					Contributing to Bootstrap
+				</a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="container my-5">
+		<div class="p-5 text-center bg-body-tertiary rounded-3">
+		  <h1 class="text-body-emphasis">Basic jumbotron</h1>
+		  <p class="lead">
+			This is a simple Bootstrap jumbotron that sits within a <code>.container</code>, recreated with built-in utility classes.
+		  </p>
+		</div>
+	  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+  <footer>
+	
+  </footer>
+<!-- ------------------------------------------------------------------------------------------ -->
 </body>
 </html>
