@@ -32,3 +32,19 @@ function includeHTML() {
 }
 
 includeHTML();
+
+/* 
+================================================
+ */
+
+const $nav = document.querySelector('.navbar')
+window.addEventListener('scroll', () => {
+	if(window.scrollY >= 60) {
+		// $nav.classList.add('navbar-scrolled')
+		$nav.classList.add('scrolled')
+	} else if (window.scrollY <= 60) {
+		// $nav.classList.remove('navbar-scrolled')
+		$nav.classList.remove('scrolled')
+	}
+})
+//--------------------------------------------------------------
