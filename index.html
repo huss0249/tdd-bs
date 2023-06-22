@@ -42,7 +42,7 @@
 
     <script src="./script.js" defer></script>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden bg-tertiary mx-0 px-0">
 
 
 
@@ -50,9 +50,15 @@
         GOOD
         ===================================================================  
     -->
+    
+    <header class="bg-transparent" w3-include-html="./inc/header_sticky.html"></header>
+    <main class="container-fluid bg-body-white pt-0 mt-0 px-0 py-5 my-2">
 
-    <header w3-include-html="./inc/header_sticky.html"></header>
-    <main w3-include-html="./inc/sample_main.html"></main>
+      <!-- <div class="p-5 mb-4 bg-body-tertiary rounded-3" w3-include-html="./inc/comps/custom_jumbo.html"></div> -->
+      <div class="p-5 m-0 mt-n2 mb-4 pt-5 bg-info rounded-0" w3-include-html="./inc/comps/custom_jumbo.html"></div>
+      <!-- <main w3-include-html="./inc/sample_main.html"></main> -->
+      <div w3-include-html="./inc/sample_main.html"></div>
+    </main>
     <!-- <main w3-include-html="./inc/sample_main.html"></main> -->
 
     <!-- <div w3-include-html="./inc/responsive_hero_w_img.html"></div> -->
