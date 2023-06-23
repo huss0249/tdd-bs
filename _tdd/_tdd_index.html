@@ -43,34 +43,26 @@
     <script src="./script.js" defer></script>
   </head>
   <!-- <body class="overflow-x-hidden bg-tertiary mx-0 px-0"> -->
-  <body class="overflow-x-hidden bg-tertiary m-0 p-0">
+  <body class="overflow-x-hidden m-0 p-0">
 
     <!--          =========================================================
         GOOD
         ===================================================================  
     -->
+    <!-- class="container-fluid bg-transparent fixed-top py-2" -->
     <header
-      class="container-fluid bg-transparent fixed-top py-2"
-      w3-include-html="./inc/header_sticky.html"></header>
-    <!-- <header class="bg-transparent" w3-include-html="./inc/header_sticky.html"></header> -->
+      class="container-fluid py-2"
+      w3-include-html="./views/header_sticky_full.html"></header>
     
-    <main class="container-fluid pt-0 px-0">
+    <!-- <main class="container-fluid pt-0 px-0"> -->
+    <main class="container-fluid">
 
-      <!-- <div class="p-5 mb-4 bg-body-tertiary rounded-3" w3-include-html="./inc/comps/custom_jumbo.html"></div> -->
-      <div class="full-w-jumbo p-5 mb-4" w3-include-html="./inc/comps/1_full_width_jumbo.html"></div>
-      <!-- <div
-        class="p-5 m-0 mt-n2 mb-4 pt-5 bg-info rounded-0 cus_hero"
-        w3-include-html="./inc/comps/1_custom_jumbo.html"></div> -->
-
-      <!-- <div
-        class="p-5 m-0 mt-n2 mb-4 pt-5 bg-info rounded-0"
-        w3-include-html="./inc/comps/custom_jumbo_img.html"></div> -->
+      <!-- <div class="full-w-jumbo p-5 mb-4" w3-include-html="./inc/comps/1_full_width_jumbo.html"></div> -->
 
 
 
 
 
-      <!-- <main w3-include-html="./inc/sample_main.html"></main> -->
       <div class="pt-5 mt-5" w3-include-html="./inc/1_sample_main.html"></div>
     </main>
     <!-- <main w3-include-html="./inc/sample_main.html"></main> -->
@@ -125,16 +117,10 @@
     
 
 
-    <footer w3-include-html="./inc/footer.html"></footer>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top bg-info footer mt-auto py-3"
+      w3-include-html="./comps/footer.html"
+      ></footer>
 
-
-
-  <!--          =========================================================
-      TMP
-      ===================================================================
-    -->
-
-    <!-- <div w3-include-html="./inc/tmp/comp5.html"></div> -->
-    <!-- <div w3-include-html="./inc/tmp/starter.html"></div> -->
   </body>
 </html>
