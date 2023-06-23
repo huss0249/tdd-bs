@@ -73,8 +73,10 @@ const includeHTML = () => {
       xhttp.onreadystatechange = function () {
 
         if (this.readyState == 4) {
-          this.status == 200 ? el.innerHTML = this.responseText : ''
-          this.status == 404 ? el.innerHTML = "Page not found." : ''
+          // this.status == 200 ? el.innerHTML = this.responseText : ''
+          // this.status == 404 ? el.innerHTML = "Page not found." : ''
+          this.status == 200 ? el.outerHTML = this.responseText : ''
+          this.status == 404 ? el.outerHTML = "Page not found." : ''
 
           /*remove the attribute, and call this function once more:*/
           // elmnt.removeAttribute("w3-include-html");
@@ -140,5 +142,5 @@ window.addEventListener('scroll', () => {
 //--------------------------------------------------------------
 
 $df = document.getElementsByTagName('df')
-console.log($df)
+// console.log($df)
 // console.log($df.lastChildElement)
