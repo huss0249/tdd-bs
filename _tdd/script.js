@@ -1,101 +1,34 @@
-// function includeHTML() {
-//   var z, i, elmnt, file, xhttp;
-//   /*loop through a collection of all HTML elements:*/
-//   z = document.getElementsByTagName("*");
-//   for (i = 0; i < z.length; i++) {
-//     elmnt = z[i];
-//     /*search for elements with a certain atrribute:*/
-//     file = elmnt.getAttribute("w3-include-html");
-
-//     if (file) {
-//       /*make an HTTP request using the attribute value as the file name:*/
-//       xhttp = new XMLHttpRequest();
-//       xhttp.onreadystatechange = function () {
-//         if (this.readyState == 4) {
-//           if (this.status == 200) {
-//             elmnt.innerHTML = this.responseText;
-//           }
-//           if (this.status == 404) {
-//             elmnt.innerHTML = "Page not found.";
-//           }
-//           /*remove the attribute, and call this function once more:*/
-//           elmnt.removeAttribute("w3-include-html");
-//           includeHTML();
-//         }
-//       };
-//       xhttp.open("GET", file, true);
-//       xhttp.send();
-//       /*exit the function:*/
-//       return;
-//     }
-//   }
-// }
-
-// includeHTML();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**
+ * HTML FILE INCLUDE
+ * Modified from the original w3schools code
+ */
 const includeHTML = () => {
-  let z, i, elmnt, file, xhttp
-
   /*loop through a collection of all HTML elements:*/
-  // els = document.getElementsByTagName("*");
   const els = document.querySelectorAll('[w3-include-html]')
-  // console.log(els)
-  
 
   els.forEach(el => {
-    file = el.getAttribute("w3-include-html")
-    // console.log(file)
-    // })
-
-
-  
-    // for (i = 0; i < z.length; i++) {
-    // elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    // file = elmnt.getAttribute("w3-include-html");
-
+    let file = el.getAttribute("w3-include-html")
     if (file) {
       /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
+      let xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function () {
 
         if (this.readyState == 4) {
-          // this.status == 200 ? el.innerHTML = this.responseText : ''
-          // this.status == 404 ? el.innerHTML = "Page not found." : ''
+          // OUTER instead of INNER HTML
           this.status == 200 ? el.outerHTML = this.responseText : ''
           this.status == 404 ? el.outerHTML = "Page not found." : ''
 
           /*remove the attribute, and call this function once more:*/
-          // elmnt.removeAttribute("w3-include-html");
           el.removeAttribute("w3-include-html");
           includeHTML()
         }
       }
       xhttp.open("GET", file, true);
-      xhttp.send();
-      
+      xhttp.send();      
       return
     }
-
-    // }
   });
-
-
 }
-
 includeHTML();
 
 

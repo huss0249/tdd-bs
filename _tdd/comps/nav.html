@@ -1,9 +1,9 @@
 <nav
-class="navbar navbar-dark mx-n5"
+class="navbar navbar-dark bg-dark fixed-top"
 aria-label="Dark offcanvas navbar"
 >
-<!-- <div class="container-fluid"> -->
-<div id='nav' class="container">
+
+<div class="container">
   <a class="navbar-brand" href="#">BRAND HERE</a>
   <button
     class="navbar-toggler"
@@ -16,13 +16,7 @@ aria-label="Dark offcanvas navbar"
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div
-    class="offcanvas offcanvas-end text-bg-dark"
-    tabindex="-1"
-    id="offcanvasNavbarDark"
-    aria-labelledby="offcanvasNavbarDarkLabel"
-    w3-include-html="./views/offcanvas.html">
-  </div>
+  <div w3-include-html="./views/offcanvas.html"></div>
 </nav>
 <style>
 .nav-scroll {
