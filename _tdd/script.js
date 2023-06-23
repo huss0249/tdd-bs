@@ -24,7 +24,7 @@ const includeHTML = () => {
         }
       }
       xhttp.open("GET", file, true);
-      xhttp.send();      
+      xhttp.send();
       return
     }
   });
@@ -73,3 +73,7 @@ window.addEventListener('scroll', () => {
 	}
 })
 //--------------------------------------------------------------
+
+const $tmp = document.getElementsByTagName('editor-card')
+console.log($tmp)
+console.log($tmp[0])
