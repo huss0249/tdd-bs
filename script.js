@@ -37,14 +37,32 @@ includeHTML();
 ================================================
  */
 
-const $nav = document.querySelector('.navbar')
+// const $nav = document.querySelector('.navbar')
+// window.addEventListener('scroll', () => {
+// 	if(window.scrollY >= 60) {
+// 		// $nav.classList.add('navbar-scrolled')
+// 		$nav.classList.add('scrolled')
+// 	} else if (window.scrollY <= 60) {
+// 		// $nav.classList.remove('navbar-scrolled')
+// 		$nav.classList.remove('scrolled')
+// 	}
+// })
+
+const $nav = document.querySelector('header')
+
 window.addEventListener('scroll', () => {
 	if(window.scrollY >= 60) {
 		// $nav.classList.add('navbar-scrolled')
-		$nav.classList.add('scrolled')
+		$nav.classList.remove('bg-transparent')
+		$nav.classList.add('bg-dark')
+		$nav.classList.add('transition-3')
+		// $nav.classList.add('scrolled')
 	} else if (window.scrollY <= 60) {
-		// $nav.classList.remove('navbar-scrolled')
-		$nav.classList.remove('scrolled')
+    // $nav.classList.remove('navbar-scrolled')
+		$nav.classList.remove('bg-dark')
+		// $nav.classList.remove('scrolled')
+		$nav.classList.remove('transition-3')
+		$nav.classList.add('bg-transparent')
 	}
 })
 //--------------------------------------------------------------
