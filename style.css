@@ -3,26 +3,14 @@ body * {
   font-family: "Segoe UI", Tahoma, Geneva, sans-serif !important;
 }
 
+body{
+  font-size: 15pt;
+}
+
 .transition-3 {
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   -ms-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-}
-
-.full-w-jumbo {
-  /* background: red, linear-gradient(blue, yellow); */
-  background: linear-gradient(-25deg, transparent, rgba(0, 0, 0, 0.95) 90%),
-              linear-gradient(25deg, transparent, #0f0 100%),
-              linear-gradient(-135deg, transparent, #f00 100%),
-  /* gray repeating-linear-gradient(90deg, transparent, transparent 5px,
-  rgba(255, 255, 255, 0.25) 50px,
-  rgba(255, 255, 255, 0.25) 150px), */
-  url('./assets/sample_img.jpg');
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  /* object-fit: cover; */
-  background-size: cover;
-  
 }
