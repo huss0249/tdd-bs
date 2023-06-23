@@ -48,21 +48,28 @@ includeHTML();
 // 	}
 // })
 
-const $nav = document.querySelector('header')
-
+const $nav = document.querySelector('#nav')
+console.log($nav)
 window.addEventListener('scroll', () => {
-	if(window.scrollY >= 60) {
+  if (window.scrollY >= 60) {
+    console.log($nav)
+    console.log('scroll')
 		// $nav.classList.add('navbar-scrolled')
-		$nav.classList.remove('bg-transparent')
-		$nav.classList.add('bg-dark')
-		$nav.classList.add('transition-3')
+		// $nav.classList.remove('bg-transparent')
+		// $nav.classList.add('bg-dark')
+		// $nav.classList.add('transition-3')
+		// $nav.classList.toggle('nav-scroll')
+		// $nav.classList.toggle('transition-3')
 		// $nav.classList.add('scrolled')
 	} else if (window.scrollY <= 60) {
+    // $nav.classList.toggle('nav-scroll')
+		// $nav.classList.toggle('transition-3')
+    console.log('scroll up')
     // $nav.classList.remove('navbar-scrolled')
-		$nav.classList.remove('bg-dark')
+		// $nav.classList.remove('bg-dark')
 		// $nav.classList.remove('scrolled')
-		$nav.classList.remove('transition-3')
-		$nav.classList.add('bg-transparent')
+		// $nav.classList.remove('transition-3')
+		// $nav.classList.add('bg-transparent')
 	}
 })
 //--------------------------------------------------------------
