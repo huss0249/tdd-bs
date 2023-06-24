@@ -49,7 +49,7 @@ includeHTML();
 // })
 
 const $nav = document.querySelector('#nav')
-// console.log($nav)
+console.log($nav)
 window.addEventListener('scroll', () => {
   if (window.scrollY >= 60) {
     console.log($nav)
