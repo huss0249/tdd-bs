@@ -77,3 +77,10 @@ window.addEventListener('scroll', () => {
 const $tmp = document.getElementsByTagName('editor-card')
 console.log($tmp)
 console.log($tmp[0])
+
+
+
+
+const popover = new bootstrap.Popover('.popover-dismiss', {
+  trigger: 'focus'
+})
